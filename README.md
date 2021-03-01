@@ -71,22 +71,17 @@ As a user I need a way to edit the length of my timers so that I can find a time
 		1.1.1 Given a user ID, the system shall verify the validity of the user ID and password.
 		1.1.2 Given authorization, the system shall allow the user access to their task list.
 		1.1.3 The system shall allow the new user to create new user ID and allow the new user to create a password.
-		1.1.4 The system shall give access to the application when the user continues as guest.
-		
+		1.1.4 The system shall give access to the application when the user continues as guest.		
 	1.2 The system shall allow the user to access the calendar, task list, and timer.
 		1.2.1 The system shall allow the user to display the user’s task list.
 		1.2.2 The system shall allow the user to display the Pomodoro Timer.
-		1.2.3 The system shall allow the user to display the calendar.
-		
+		1.2.3 The system shall allow the user to display the calendar.		
 	1.3 The system shall display options to create a new task.
 		1.3.1 The system shall display options to edit a task.
 		1.3.2 The system shall display options to delete a task.
-	1.3 The system shall display options to edit the durations of the timers.
-		
-		
+	1.4 The system shall display options to edit the durations of the timers.		
 2. The system shall save the data provided by the user in the application database.
 	2.2 the System shall only save data from a guest user for that session.
-
 3. The system shall be developed with C# language, utilizing SQL and ASP.NET .
 	3.1 The system shall be hosted in Azure.
 </pre></code>
