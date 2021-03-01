@@ -31,6 +31,7 @@ The main focus of this application is to allow a user to be able to prioritize, 
 ### Settings
 ![WFD Settings](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/settings.jpg)
 
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
 ## User Stories
@@ -40,6 +41,7 @@ As a Student, I need a website that helps me visualize when my tasks are due.
 
 As a Student, I need an way to effectively manage my time while completing my tasks.
 
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 ## Use-Cases
 
@@ -59,10 +61,12 @@ As a user I need a way to delete a task to remove it completely.
 
 As a user I need a way to edit the length of my timers so that I can find a time the benefits me the most.
 
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 ## Use-Case Diagram
 ![Image of UMLUnNamedTimeApp](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/UMLUnNamedTimeApp.jpg)
 
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 ## Requirements
 
@@ -85,3 +89,4 @@ As a user I need a way to edit the length of my timers so that I can find a time
 3. The system shall be developed with C# language, utilizing SQL and ASP.NET .
 	3.1 The system shall be hosted in Azure.
 </pre></code>
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
