@@ -3,7 +3,7 @@ The main purpose of this application is to allow users to be able to prioritize,
 
 
 
-##Main Features##
+## Main Features
 
 •	Users will be able to log in to be able to access their list from any device.
 
@@ -14,7 +14,7 @@ The main purpose of this application is to allow users to be able to prioritize,
 •	A section where a user can utilize the Pomodoro method.
 
 
-##User Stories##
+## User Stories
 As a Student, I need a website that will help me track my tasks.
 
 As a Student, I need a website that helps me visualize when my tasks are due.
@@ -22,7 +22,7 @@ As a Student, I need a website that helps me visualize when my tasks are due.
 As a Student, I need an way to effectively manage my time while completing my tasks.
 
 
-##Use-Cases##
+## Use-Cases
 
 As a user I need a way to access my task list from anywhere so I can always reference my tasks.
 
@@ -41,11 +41,11 @@ As a user I need a way to delete a task to remove it completely.
 As a user I need a way to edit the length of my timers so that I can find a time the benefits me the most.
 
 
-##Use-Case Diagram##
+## Use-Case Diagram
 ![Image of UMLUnNamedTimeApp](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/UMLUnNamedTimeApp.jpg)
 
 
-##Requirements##
+## Requirements
 
 1. The system shall allow the current user to log in, create a user account or continue as a guest.
 	1.1 The system shall provide means for an existing user to enter his/her user ID and password.
