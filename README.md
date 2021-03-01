@@ -15,22 +15,8 @@ The main focus of this application is to allow a user to be able to prioritize, 
 
 
 ## Draft Wire Frame Diagram
-
-### Home
-![WFD Home](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/home_page.jpg)
-
-### Create Task
-![Create task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/create_task.jpg)
-
-### Task List
-![WFD Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/task_list.jpg)
-
-### GoPomo Timer
-![WFD Pomo](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/gopomo.jpg)
-
-### Settings
-![WFD Settings](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/settings.jpg)
-
+![Draft WFD](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/UTAFull.jpg)
+[See individual Files](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram)
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
