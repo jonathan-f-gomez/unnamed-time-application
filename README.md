@@ -1,7 +1,7 @@
 # Unnamed Time Application
 This is a prject for my MSSA Cohort.
 
-## Description
+### Description
 The main focus of this application is to allow a user to be able to prioritize, track, and manage their tasks while using a built in work timer to help focus on completeing them. 
 
 
