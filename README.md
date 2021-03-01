@@ -20,7 +20,7 @@ The main purpose of this application is to allow users to be able to prioritize,
 ![WFD Home](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/home_page.png)
 
 ### Create Task
-![Create task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/create_task.png)
+![Create task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/create_task.jpg)
 
 ### Task List
 ![WFD Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/task_list.png)
