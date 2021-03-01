@@ -14,6 +14,25 @@ The main purpose of this application is to allow users to be able to prioritize,
 •	A section where a user can utilize the Pomodoro method.
 
 
+## Wire Frame Diagram
+
+### Home
+![WFD Home](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements\Wire-Frame-Diagram\home_page.png)
+
+### Create Task
+![Create task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements\Wire-Frame-Diagram\create_task.png)
+
+### Task List
+![WFD Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements\Wire-Frame-Diagram\task_list.png)
+
+### GoPomo Timer
+![WFD Pomo](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements\Wire-Frame-Diagram\gopomo.png)
+
+### Settings
+![WFD Settings](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements\Wire-Frame-Diagram\settings.png)
+
+
+
 ## User Stories
 As a Student, I need a website that will help me track my tasks.
 
