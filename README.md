@@ -66,8 +66,8 @@ As a user I need a way to edit the length of my timers so that I can find a time
 
 ## Requirements
 
-1. The system shall allow the current user to log in, create a user account or continue as a guest.
-	1.1 The system shall provide means for an existing user to enter his/her user ID and password.
+1. The system shall allow the current user to log in, create a user account or continue as a guest.<br /><p>
+	1.1 The system shall provide means for an existing user to enter his/her user ID and password.<br />
 		1.1.1 Given a user ID, the system shall verify the validity of the user ID and password.
 		1.1.2 Given authorization, the system shall allow the user access to their task list.
 		1.1.3 The system shall allow the new user to create new user ID and allow the new user to create a password.
