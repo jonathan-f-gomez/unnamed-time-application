@@ -1,4 +1,4 @@
-# unnamed-time-application
+# Unnamed-Time-Application
 The main purpose of this application is to allow users to be able to prioritize, track, and manage all their tasks while using a built in work timer to help focus. 
 
 
