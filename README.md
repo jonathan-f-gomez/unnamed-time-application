@@ -16,7 +16,7 @@ The main focus of this application is to allow a user to be able to prioritize, 
 
 ## Draft Wire Frame Diagram
 ![Draft WFD](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram/UTAFull.jpg)
-[See individual Files](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram)
+[See individual Files](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram)<br />
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
