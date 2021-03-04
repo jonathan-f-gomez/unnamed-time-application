@@ -9,7 +9,7 @@ The main focus of this application is to allow a user to be able to prioritize, 
 1. [User Stories](https://github.com/jonathan-f-gomez/unnamed-time-application#user-stories)
 1. [Use-Cases](https://github.com/jonathan-f-gomez/unnamed-time-application#use-cases)
 1. [Use-Case Diagram](https://github.com/jonathan-f-gomez/unnamed-time-application#use-case-diagram)
-1. [Requirements](https://github.com/jonathan-f-gomez/unnamed-time-application#requirements)
+1. [Requirements](https://github.com/jonathan-f-gomez/unnamed-time-application#test-requirements)
 
 
 
@@ -54,25 +54,26 @@ As a user I need a way to edit the length of my timers so that I can find a time
 
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
-## Requirements
+## Test Requirements
+| Requirement ID | Requirement Description | Test Procedure | Test Result | Time Stamp | Build |
+|----:|:----|:----:|:----:|:----:|:----:|
+| 1 | The system shall allow the current user to log in, create a user account or continue as a guest.	| User Login | :red_circle: |  |  |
+| 1.1 | The system shall provide means for an existing user to enter his/her user ID and password.	|  | :red_circle: |  |  |
+| 1.1.1 | Given a user ID, the system shall verify the validity of the user ID and password. |  | :red_circle: |  |  |
+| 1.1.2 | Given authorization, the system shall allow the user access to their task list.	|  | :red_circle: |  |  |
+| 1.1.3 | The system shall allow the new user to create new user ID and allow the new user to create a password. |  | :red_circle: |  |  |
+| 1.1.4 | The system shall give access to the application when the user continues as guest.	|  | :red_circle: |  |  |
+| 1.2 | The system shall allow the user to access the calendar, task list, and timer.	| Website Layout | :red_circle: |  |  |
+| 1.2.1 | The system shall allow the user to display the user’s task list.	|  | :red_circle: |  |  |
+| 1.2.2 | The system shall allow the user to display the Pomodoro Timer. |  | :red_circle: |  |  |
+| 1.2.3 | The system shall allow the user to display the calendar.	|  | :red_circle: |  |  |
+| 1.3 | The system shall display options to create a new task.	| Website Layout | :red_circle: |  |  |
+| 1.3.1 | The system shall display options to edit a task.		|  | :red_circle: |  |  |
+| 1.3.2 | The system shall display options to delete a task.	|  | :red_circle: |  |  |
+| 1.4 | The system shall display options to edit the durations of the timers.	|  | :red_circle: |  |  |
+| 2 | The system shall save the data provided by the user in the application database.	|  | :red_circle: |  |  |
+| 2.2 | the System shall only save data from a guest user for that session.	|  | :red_circle: |  |  |
 
-<pre><code>1. The system shall allow the current user to log in, create a user account or continue as a guest.
-	1.1 The system shall provide means for an existing user to enter his/her user ID and password.
-		1.1.1 Given a user ID, the system shall verify the validity of the user ID and password.
-		1.1.2 Given authorization, the system shall allow the user access to their task list.
-		1.1.3 The system shall allow the new user to create new user ID and allow the new user to create a password.
-		1.1.4 The system shall give access to the application when the user continues as guest.		
-	1.2 The system shall allow the user to access the calendar, task list, and timer.
-		1.2.1 The system shall allow the user to display the user’s task list.
-		1.2.2 The system shall allow the user to display the Pomodoro Timer.
-		1.2.3 The system shall allow the user to display the calendar.		
-	1.3 The system shall display options to create a new task.
-		1.3.1 The system shall display options to edit a task.
-		1.3.2 The system shall display options to delete a task.
-	1.4 The system shall display options to edit the durations of the timers.		
-2. The system shall save the data provided by the user in the application database.
-	2.2 the System shall only save data from a guest user for that session.
-3. The system shall be developed with C# language, utilizing SQL and ASP.NET .
-	3.1 The system shall be hosted in Azure.
-</pre></code>
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
+
+
