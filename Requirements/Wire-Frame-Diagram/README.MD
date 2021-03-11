@@ -1,6 +1,6 @@
 # Wire Frame Diagram
 ## Quick Jump
-1. [Main View](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram#main-view)
+1. [Main View](https://github.com/jonathan-f-gomez/unnamed-time-application/tree/main/Requirements/Wire-Frame-Diagram#main-view)
 1. [Create Task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram#create-task)
 1. [Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram#task-list)
 1. [Pomodoro Timer](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram#pomodoro-timer)
