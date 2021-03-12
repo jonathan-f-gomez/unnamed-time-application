@@ -19,7 +19,7 @@ The main focus of this application is to allow a user to be able to prioritize, 
 
 
 [See individual Files](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram)<br />
-[:electron:Check out the Prototype!:electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/tree/main/Requirements/Prototype)<br />
+[:electron:Check out the Prototype!:electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/tree/main/Prototype)<br />
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
