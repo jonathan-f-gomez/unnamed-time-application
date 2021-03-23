@@ -9,11 +9,11 @@
 <details>
 <summary>Table of Contents</summary>
 
-1. [Welcome Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#welcome-screen)
-2. [Login Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#login-screen)
-3. [Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#task-list)
-4. [Create Task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#create-task)
-5. [Pomodoro Timer](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#pomodoro-timer)
+1. [Welcome Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#--welcome-screen-)
+2. [Login Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#--login-screen-)
+3. [Task List](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#--task-list-)
+4. [Create Task](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#--create-task-)
+5. [Pomodoro Timer](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#--pomodoro-timer-)
  
 </details>
 
