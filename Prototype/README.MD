@@ -30,7 +30,7 @@ The first thing that a user will see when they come to the application is a cale
 
 
 <h2 align="center">
-  Login Screen
+Login Screen
 </h2>
 
 The mock-up login/registration screen. The user will not have to login to use the application unless they want to access their list from any device.
