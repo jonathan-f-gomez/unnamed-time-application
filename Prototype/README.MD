@@ -5,9 +5,12 @@ Prototype for the UTA
 
 
 
+<h1 align="center">
+Table of Contents
+</h1>
 
 <details>
-<summary>Table of Contents</summary>
+<summary>Collapse me..</summary>
 
 1. [Welcome Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#welcome-screen)
 2. [Login Screen](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#login-screen)
