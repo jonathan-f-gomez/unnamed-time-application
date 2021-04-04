@@ -5,9 +5,9 @@ Prototype for the UTA
 
 
 
-<h1 align="center">
+<h2 align="center">
 Table of Contents
-</h1>
+</h2>
 
 <details>
 <summary>Collapse me..</summary>
