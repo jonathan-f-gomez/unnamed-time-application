@@ -1,0 +1,284 @@
+﻿@model UtaPrototype.Models.TasksList
+@using UtaPrototype.Controllers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+@{
+    ViewData["Title"] = "Home Page"; /*This is the header / footer*/
+}
+
+
+@*The Body*@
+<!-- Content
+============-->
+<section id="content" style="background-color:#162e31;">
+    <div class="content-wrap">
+
+
+        <!--Calander container
+        ======================-->
+        <div class="parallax header-stick bottommargin-lg dark" style="padding: 60px 0; background-color: #093c42;
+							height:auto;" data-bottom-top="background-position:center" data-top-bottom="background-position:0px -500px;">
+            <!--This is the Calander View-->
+
+            <div class="container clearfix">
+
+                <div class="events-calendar" id="events-calendar">
+
+                    <div class="events-calendar-header clearfix">
+
+                        <!--Header for Calendar
+                        =======================-->
+                        <h2>Your Schedule</h2>
+
+                        <!--Navigation for Calendar
+                        ===========================-->
+                        <h3 class="calendar-month-year">
+                            <span id="calendar-month" class="calendar-month"></span>
+                            <span id="calendar-year" class="calendar-year"></span>
+                            <nav>
+                                <span id="calendar-prev" class="calendar-prev"><i class="icon-chevron-left" title="Previous Month"></i></span>
+                                <span id="calendar-next" class="calendar-next"><i class="icon-chevron-right" title="Next Month"></i></span>
+                                <span id="calendar-current" class="calendar-current" title="Got to current date"><i class="icon-reload"></i></span>
+                            </nav>
+                        </h3>
+                    </div>
+                    <div id="calendar" class="fc-calendar-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container clearfix">
+
+            <!--Divider with ID for events-task
+            ===========================================================================-->
+            <div class="divider divider-center" id="events-task"><i class="icon-circle-blank"></i></div>
+
+
+            <!--Header for Task list with Create Button
+            ===========================================-->
+            <div class="row row-header">
+                <div class="col"></div>
+                <div>
+                    <h3 style="color: #FFFAF8;">My Task List</h3>
+                    <button class="button1 button-rounded button-reveal button-large button-dirtygreen" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="icon-plus-sign"></i><span>New Task</span></button>
+                </div>
+                <div class="col"></div>
+            </div><!--End of task list header-->
+            <!--Modal
+            ========================================-->
+            <div class="modal fade bs-example-modal-lg dark" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg ">
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">New task</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <form asp-action="Create">
+                                    <!--Task Name & Prority
+                                    =======================-->
+                                    <div class="form-row">
+
+                                        <!--Task Name-->
+                                        <div class="form-group col-md-6">
+                                            <label asp-for="TaskName">Task*</label>
+                                            <input asp-for="TaskName" class="form-control" placeholder="Task Name..." required>
+                                        </div>
+
+                                        <!--Priority-->
+                                        <div class="form-group col-md-6">
+                                            <label for="Priority">Priority</label>
+
+                                            <!--Radio Buttons-->
+                                            <div>
+
+                                                <label class="radio radio-before">
+                                                    <span class="radio__input">
+                                                        <input type="radio" name="radio" checked="checked">
+                                                        <span class="radio__control"></span>
+                                                    </span>
+                                                    <span class="radio__label">N/A</span>
+                                                </label>
+
+                                                <label class="radio radio-before">
+                                                    <span class="radio__input">
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio__control"></span>
+                                                    </span>
+                                                    <span class="radio__label">1</span>
+                                                </label>
+
+                                                <label class="radio radio-before">
+                                                    <span class="radio__input">
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio__control"></span>
+                                                    </span>
+                                                    <span class="radio__label">2</span>
+                                                </label>
+
+                                                <label class="radio radio-before">
+                                                    <span class="radio__input">
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio__control"></span>
+                                                    </span>
+                                                    <span class="radio__label">3</span>
+                                                </label>
+
+                                                <label class="radio radio-before">
+                                                    <span class="radio__input">
+                                                        <input type="radio" name="radio">
+                                                        <span class="radio__control"></span>
+                                                    </span>
+                                                    <span class="radio__label">4</span>
+                                                </label>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--Date and Time Picker
+                                    =======================-->
+                                    <div class="form-row">
+                                        <!--Date-->
+                                        <div class="form-group col-md-6">
+                                            <label  asp-for="DueDate">Due Date*</label>
+                                            <input asp-for="DueDate" type="date" class="form-control" id="date" required>
+                                        </div>
+
+                                        <!--Time Due NEED TO ADD NEW COLUM-->
+                                        <div class="form-group col-md-6">
+                                            <label for="time">Time</label>
+                                            <input type="time" class="form-control" id="time">
+                                        </div>
+                                    </div>
+
+                                    <!--Task Details
+                                    ================-->
+                                    <div class="form-row">
+                                        <label asp-for="TaskInfo">Task Details</label>
+                                        <textarea asp-for="TaskInfo" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Text Here..."></textarea>
+                                    </div>
+
+                                    <!--For Padding-->
+                                    <div class="form-group"></div>
+
+                                    <button type="submit" value="Create" class="button button-rounded button-large button-dirtygreen">Create Task</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--End Modal-->
+            <!--Start of Task List
+            =======================-->
+            <div class="row">
+
+                <!--ENTRY 1 This is the good one
+                ===========================-->
+                <div class="entry col-12">
+                    <div class="no-gutters p-4 col-12 round-edge" style="background-color: #005457; border: black;">
+
+                        <div class="row justify-content-between">
+                            <p class="col listName">Complete Project step 9</p>
+                            <div style="color:black; padding-right: 20px;">
+                                <a class="button button-rounded button-reveal button-xsmall button-dirtygreen"><i class="icon-pencil"></i><span>Edit</span></a>
+                            </div>
+                        </div>
+
+                        <div class="pl-md-4">
+                            <div class="entry-title title-sm">
+                            </div>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><span class="badge badge-danger px-2 py-1">Priority: 1</span> </li>
+                                    <li><i class="icon-time"></i> 19:00</li>
+                                    <li><i class="icon-calendar3"> March 13, 2021</i></li>
+                                </ul>
+                            </div>
+
+                            <div class="entry-content">
+                                <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur voluptate rerum molestiae eaque possimus exercitationem eligendi fuga.</p>
+                            </div>
+
+                            <div class="text-md-right">
+                                <a href="#" class="button button-rounded button-reveal button-large button-dirtygreen"><i class="icon-check-square1"></i><span>Complete</span></a>
+                                <a href="#" class="button button-rounded button-reveal button-large button-red text-right"><i class="icon-trash2"></i><span>Delete</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--ENTRY 2
+                ===========================-->
+                <div class="entry col-12">
+                    <div class="no-gutters p-4 col-12 round-edge" style="background-color: #005457; border: black;">
+
+                        <div class="row d-flex justify-content-between">
+                            <p class="col  listName">Try and relax</p>
+
+                            <a class="edit-button"><i class="block icon-pencil"></i></a>
+
+                        </div>
+                        <div class="pl-md-4">
+                            <div class="entry-title title-sm">
+
+                            </div>
+                            <div class="entry-meta">
+                                <ul>
+                                    <li><span class="badge bg-info px-2 py-1 text-dark">Priority: N/A</span></li>
+                                    <li><i class="icon-time"></i> Indefinite</li>
+                                    <li><i class="icon-calendar3"> Forever </i></li>
+                                </ul>
+                            </div>
+                            <div class="entry-content">
+                                <p style="color: black;">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,  enim culpa reiciendis et explicabo tenetur voluptate rerum molestiae eaque possimus
+                                    voluptatem, dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur voluptate Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Ratione,  enim culpa reiciendis et explicabo tenetur voluptate rerum rerum molestiae eaque possimus exercitationem eligendi fuga.
+                                </p>
+                            </div>
+                            <div class="text-md-right">
+                                <a href="#" class="button button-rounded button-reveal button-large button-dirtygreen"><i class="icon-check-square1"></i><span>Complete</span></a>
+                                <a href="#" class="button button-rounded button-reveal button-large button-red text-right"><i class="icon-trash2"></i><span>Delete</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--End of task list-->
+            <!--Divider with ID for events-pomo
+            ===========================================================================-->
+            <div class="divider divider-center" id="events-pomo"><i class="icon-circle-blank"></i></div>
+
+            <!--Header for Pomodoro Timer
+            =================================-->
+            <div class="row row-header">
+                <div class="col-sm-4"></div>
+                <div>
+                    <h2 style="color: #FFFAF8;">GoPomo</h3>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+
+            <!--Start of my Pomodoro Tmer
+            =================================-->
+            <div class="row">
+                <div class="entry event col-12 ">
+                    <div class="grid-inner row align-items-center no-gutters p-4 round-edge" style="background-color: #005457; border: black;">
+                        <div class="entry-image mb-md-0">
+                            <div id="countdown-ex3" class="countdown countdown-large" data-year="2021" data-format="MS"></div>
+
+                            <div class="TheWicked text-md-center ">
+                                <a href="#" class=" button button-rounded button-reveal break button-desc-break "><div>Long break</div><span>15 Minutes</span></a>
+                                <a href="#" class=" button button-rounded button-reveal break button-desc-break"><div>Short break</div><span>5 Minutes</span></a>
+                                <a href="#" class="button button-rounded button-reveal work button-desc-work"><div>Get to work</div><span>25 Minutes</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- #content end -->

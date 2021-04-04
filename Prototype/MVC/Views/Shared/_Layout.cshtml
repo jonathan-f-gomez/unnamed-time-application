@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SuperShittyPrototype</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!--Custum Stylesheets
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="~/css/calendar.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/magnific-popup.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 " />
+
+
+</head>
+
+
+<body class="stretched" >
+
+    <div id="wrapper" class="clearfix dark">
+        <!-- Header
+        ===========-->
+        <header id="header" class="full-header transparent-header semi-transparent dark" style="border: black; background-color: #162e31;">
+            <div id="header-wrap">
+                <div class="container">
+                    <div class="header-row">
+
+                        <!-- Logo
+                        ============================================= -->
+                        <div id="logo" style="border: black;">
+                            <a class="standard-logo" data-dark-logo="images\Logo\LogoC@2x.png"><img src="images\icons\Logo\LogoA.png" alt="Un-named time app Logo"></a>
+                            <a class="retina-logo" data-dark-logo="images\Logo\LogoC@2x.png"><img src="images\icons\Logo\LogoA@2x.png" alt="Un-named time app Logo"></a>
+                        </div><!-- #logo end -->
+                        <!-- Primary Navigation
+                        ============================================ -->
+                        <nav class="primary-menu">
+
+                            <ul class="menu-container" style="border: black;">
+                                <li class="menu-item" style="border: black;">
+                                    <!--USE this for Navbar Calendar-->
+                                    <a class="menu-link" href="#"><div>Calendar</div></a>
+                                </li>
+                                <li class="menu-item">
+                                    <!--USE this for Navbar My Notes-->
+                                    <a class="menu-link" href="#events-task"><div>My Tasks</div></a>
+
+                                </li>
+                                <li class="menu-item mega-menu">
+                                    <!--USE this for Navbar My Timers-->
+                                    <a class="menu-link" href="#events-pomo"><div>GoPomo</div></a>
+                                </li>
+                                <li class="menu-item mega-menu">
+                                    <!--USE this for Navbar My Timers-->
+                                    <a class="menu-link" href="/login.html"><div><i class="icon-user-circle"></i></div></a>
+                                </li>
+                            </ul>
+                        </nav><!-- #primary-menu end -->
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap-clone"></div>
+        </header><!-- #header end -->
+        <!-- Content
+        ============-->
+        <section id="content" style="background-color:#162e31;">
+            @RenderBody()
+        </section><!-- Content End-->
+
+
+        <!--Footer start
+        ================-->
+        <footer id="footer" class="dark">
+            <div class="container">
+                <div class="w-100 text-center">
+                    Connect with me:
+
+                    <div>
+                        <a href="https://www.jgomez.dev" target="_blank" class="social-icon si-small si-borderless si-yahoo">
+                            <i class="icon-line2-globe"></i>
+                            <i class="icon-line2-globe"></i>
+                        </a>
+
+                        <a href="mailto:jonathan-f-gomez@outlook.com" target="_blank" class="social-icon si-small si-borderless si-youtube ">
+                            <i class="icon-envelope2"></i>
+                            <i class="icon-envelope2"></i>
+                        </a>
+
+                        <a href="https://github.com/jonathan-f-gomez" target="_blank" class="social-icon si-small si-borderless si-github">
+                            <i class="icon-github"></i>
+                            <i class="icon-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/jonathan-f-gomez/" target="_blank" class="social-icon si-small si-borderless si-linkedin">
+                            <i class="icon-linkedin"></i>
+                            <i class="icon-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- #footer end -->
+    </div>
+
+        <!-- Go To Top
+        ============================================= -->
+        <div id="gotoTop" class="icon-angle-up"></div>
+
+
+        <!-- JavaScripts
+        ============================================= -->
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins.min.js"></script>
+        <script src="js/jquery.calendario.js"></script>
+        <script src="js/events-data.js"></script>
+        <script src="js/components/moment.js"></script>
+
+
+
+        <!-- Scripts
+        ============================================= -->
+        <script src="js/functions.js"></script>
+
+        <script>
+
+            var cal = $('#calendar').calendario({
+                onDayClick: function ($el, $contentEl, dateProperties) {
+
+                    for (var key in dateProperties) {
+                        console.log(key + ' = ' + dateProperties[key]);
+                    }
+
+                },
+                caldata: canvasEvents
+            }),
+                $month = $('#calendar-month').html(cal.getMonthName()),
+                $year = $('#calendar-year').html(cal.getYear());
+
+            $('#calendar-next').on('click', function () {
+                cal.gotoNextMonth(updateMonthYear);
+            });
+            $('#calendar-prev').on('click', function () {
+                cal.gotoPreviousMonth(updateMonthYear);
+            });
+            $('#calendar-current').on('click', function () {
+                cal.gotoNow(updateMonthYear);
+            });
+
+            function updateMonthYear() {
+                $month.html(cal.getMonthName());
+                $year.html(cal.getYear());
+            };
+
+        </script>
+
+
+
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
