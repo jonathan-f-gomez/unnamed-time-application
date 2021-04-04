@@ -10,6 +10,7 @@ The main focus of this application is to allow a user to be able to prioritize, 
 1. [Use-Cases](https://github.com/jonathan-f-gomez/unnamed-time-application#use-cases)
 1. [Use-Case Diagram](https://github.com/jonathan-f-gomez/unnamed-time-application#use-case-diagram)
 1. [Requirements](https://github.com/jonathan-f-gomez/unnamed-time-application#test-requirements)
+1. [Check out the Prototype!  :electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#prototype-for-the-uta)<br />
 
 
 
@@ -19,7 +20,6 @@ The main focus of this application is to allow a user to be able to prioritize, 
 
 
 [See individual draft wire diagram frame pictures](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Requirements/Wire-Frame-Diagram)<br />
-[Check out the Prototype!  :electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#prototype-for-the-uta)<br />
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
