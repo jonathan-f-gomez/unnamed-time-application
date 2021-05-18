@@ -90,7 +90,7 @@ Keeping my project small allowed me to focus more on fundamentals.
 At the beginning of the project, I spent three weeks on one problem, and instead of putting it on the backlog, I put myself three weeks behind.
 
 ### What would I change / what do I know now that I wish I knew "then"?
-I would follow my original design of having a single webpage and use more partial views as well as not putting my efforts into one portion for so long.
+I would follow my original design of having a single webpage and use more partial views as well as not putting my efforts into one portion of the project for so long.
 
 
 
