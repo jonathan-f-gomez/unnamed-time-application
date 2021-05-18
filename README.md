@@ -81,3 +81,17 @@ As a user I need a way to edit the length of my timers so that I can find a time
 [Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
+## Lessons learned:
+
+### What did I do right?
+Keeping my project small allowed me to focus more on fundamentals.
+
+### what did you do wrong?
+At the beginning of the project, I spent three weeks on one problem, and instead of putting it on the backlog, I put myself three weeks behind.
+
+### What would you change / what do you know now that you wish you knew "then"?
+I would follow my original design of having a single webpage and use more partial views.
+
+
+
+
