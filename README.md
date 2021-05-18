@@ -10,7 +10,8 @@ The main focus of this application is to allow a user to be able to prioritize, 
 1. [Use-Cases](https://github.com/jonathan-f-gomez/unnamed-time-application#use-cases)
 1. [Use-Case Diagram](https://github.com/jonathan-f-gomez/unnamed-time-application#use-case-diagram)
 1. [Requirements](https://github.com/jonathan-f-gomez/unnamed-time-application#test-requirements)
-1. [Check out the Prototype!  :electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#prototype-for-the-uta)<br />
+2. [Lessons Learned](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/README.md#lessons-learned)
+3. [Check out the Prototype!  :electron:](https://github.com/jonathan-f-gomez/unnamed-time-application/blob/main/Prototype/README.MD#prototype-for-the-uta)<br />
 
 
 
@@ -93,5 +94,6 @@ At the beginning of the project, I spent three weeks on one problem, and instead
 I would follow my original design of having a single webpage and use more partial views as well as not putting my efforts into one portion of the project for so long.
 
 
+[Back to the top](https://github.com/jonathan-f-gomez/unnamed-time-application#unnamed-time-application)
 
 
